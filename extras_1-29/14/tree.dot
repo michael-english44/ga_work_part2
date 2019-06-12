@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="MedInc <= 5.004\nmse = 1.336\nsamples = 15480\nvalue = 2.068"] ;
+1 [label="MedInc <= 3.093\nmse = 0.835\nsamples = 12130\nvalue = 1.729"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AveRooms <= 4.335\nmse = 0.558\nsamples = 6010\nvalue = 1.357"] ;
+1 -> 2 ;
+3 [label="mse = 0.665\nsamples = 2585\nvalue = 1.618"] ;
+2 -> 3 ;
+4 [label="mse = 0.387\nsamples = 3425\nvalue = 1.16"] ;
+2 -> 4 ;
+5 [label="AveOccup <= 2.35\nmse = 0.837\nsamples = 6120\nvalue = 2.095"] ;
+1 -> 5 ;
+6 [label="mse = 1.285\nsamples = 1350\nvalue = 2.822"] ;
+5 -> 6 ;
+7 [label="mse = 0.519\nsamples = 4770\nvalue = 1.889"] ;
+5 -> 7 ;
+8 [label="MedInc <= 6.582\nmse = 1.23\nsamples = 3350\nvalue = 3.294"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="AveOccup <= 2.581\nmse = 0.892\nsamples = 2169\nvalue = 2.854"] ;
+8 -> 9 ;
+10 [label="mse = 1.053\nsamples = 604\nvalue = 3.559"] ;
+9 -> 10 ;
+11 [label="mse = 0.564\nsamples = 1565\nvalue = 2.582"] ;
+9 -> 11 ;
+12 [label="MedInc <= 7.814\nmse = 0.838\nsamples = 1181\nvalue = 4.104"] ;
+8 -> 12 ;
+13 [label="mse = 0.774\nsamples = 599\nvalue = 3.676"] ;
+12 -> 13 ;
+14 [label="mse = 0.521\nsamples = 582\nvalue = 4.545"] ;
+12 -> 14 ;
+}
